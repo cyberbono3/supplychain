@@ -53,10 +53,10 @@ struct Item {
 
   /* Create 4 events with the same name as each possible State (see above)
     Each event should accept one argument, the sku*/
-       event ForSale(uint _sku);
-       event Sold(uint _sku);
-       event Shipped(uint _sku);
-       event Received(uint _sku);
+       event ForSale(uint sku);
+       event Sold(uint sku);
+       event Shipped(uint sku);
+       event Received(uint sku);
 
 
 /* Create a modifer that checks if the msg.sender is the owner of the contract */
