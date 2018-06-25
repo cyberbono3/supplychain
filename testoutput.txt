@@ -1,0 +1,79 @@
+ai@ai-VirtualBox:~/Desktop/consensys/supply chain exercise/supply_chain$ truffle test
+Using network 'development'.
+
+Compiling ./contracts/SupplyChain.sol...
+Compiling ./test/TestSupplyChain.sol...
+Compiling truffle/Assert.sol...
+Compiling truffle/DeployedAddresses.sol...
+
+
+  Contract: SupplyChain
+    ✓ should add an item with the provided name and price (129ms)
+    1) should allow someone to purchase an item
+    > No events were emitted
+    2) should allow the seller to mark the item as shipped
+    > No events were emitted
+    3) should allow the buyer to mark the item as received
+    > No events were emitted
+
+
+  1 passing (700ms)
+  3 failing
+
+  1) Contract: SupplyChain
+       should allow someone to purchase an item:
+     Error: VM Exception while processing transaction: revert
+      at Object.InvalidResponse (/usr/lib/node_modules/truffle/build/webpack:/Users/gnidan/src/work/truffle/~/web3/lib/web3/errors.js:38:1)
+      at /usr/lib/node_modules/truffle/build/webpack:/Users/gnidan/src/work/truffle/~/web3/lib/web3/requestmanager.js:86:1
+      at /usr/lib/node_modules/truffle/build/webpack:/.-provider/wrapper.js:134:1
+      at XMLHttpRequest.request.onreadystatechange (/usr/lib/node_modules/truffle/build/webpack:/Users/gnidan/src/work/truffle/~/web3/lib/web3/httpprovider.js:128:1)
+      at XMLHttpRequestEventTarget.dispatchEvent (/usr/lib/node_modules/truffle/build/webpack:/Users/gnidan/src/work/truffle/~/xhr2/lib/xhr2.js:64:1)
+      at XMLHttpRequest._setReadyState (/usr/lib/node_modules/truffle/build/webpack:/Users/gnidan/src/work/truffle/~/xhr2/lib/xhr2.js:354:1)
+      at XMLHttpRequest._onHttpResponseEnd (/usr/lib/node_modules/truffle/build/webpack:/Users/gnidan/src/work/truffle/~/xhr2/lib/xhr2.js:509:1)
+      at IncomingMessage.<anonymous> (/usr/lib/node_modules/truffle/build/webpack:/Users/gnidan/src/work/truffle/~/xhr2/lib/xhr2.js:469:1)
+      at endReadableNT (_stream_readable.js:1081:12)
+      at process._tickCallback (internal/process/next_tick.js:63:19)
+
+  2) Contract: SupplyChain
+       should allow the seller to mark the item as shipped:
+     Error: VM Exception while processing transaction: revert
+      at Object.InvalidResponse (/usr/lib/node_modules/truffle/build/webpack:/Users/gnidan/src/work/truffle/~/web3/lib/web3/errors.js:38:1)
+      at /usr/lib/node_modules/truffle/build/webpack:/Users/gnidan/src/work/truffle/~/web3/lib/web3/requestmanager.js:86:1
+      at /usr/lib/node_modules/truffle/build/webpack:/.-provider/wrapper.js:134:1
+      at XMLHttpRequest.request.onreadystatechange (/usr/lib/node_modules/truffle/build/webpack:/Users/gnidan/src/work/truffle/~/web3/lib/web3/httpprovider.js:128:1)
+      at XMLHttpRequestEventTarget.dispatchEvent (/usr/lib/node_modules/truffle/build/webpack:/Users/gnidan/src/work/truffle/~/xhr2/lib/xhr2.js:64:1)
+      at XMLHttpRequest._setReadyState (/usr/lib/node_modules/truffle/build/webpack:/Users/gnidan/src/work/truffle/~/xhr2/lib/xhr2.js:354:1)
+      at XMLHttpRequest._onHttpResponseEnd (/usr/lib/node_modules/truffle/build/webpack:/Users/gnidan/src/work/truffle/~/xhr2/lib/xhr2.js:509:1)
+      at IncomingMessage.<anonymous> (/usr/lib/node_modules/truffle/build/webpack:/Users/gnidan/src/work/truffle/~/xhr2/lib/xhr2.js:469:1)
+      at endReadableNT (_stream_readable.js:1081:12)
+      at process._tickCallback (internal/process/next_tick.js:63:19)
+
+  3) Contract: SupplyChain
+       should allow the buyer to mark the item as received:
+     Error: VM Exception while processing transaction: revert
+      at Object.InvalidResponse (/usr/lib/node_modules/truffle/build/webpack:/Users/gnidan/src/work/truffle/~/web3/lib/web3/errors.js:38:1)
+      at /usr/lib/node_modules/truffle/build/webpack:/Users/gnidan/src/work/truffle/~/web3/lib/web3/requestmanager.js:86:1
+      at /usr/lib/node_modules/truffle/build/webpack:/.-provider/wrapper.js:134:1
+      at XMLHttpRequest.request.onreadystatechange (/usr/lib/node_modules/truffle/build/webpack:/Users/gnidan/src/work/truffle/~/web3/lib/web3/httpprovider.js:128:1)
+      at XMLHttpRequestEventTarget.dispatchEvent (/usr/lib/node_modules/truffle/build/webpack:/Users/gnidan/src/work/truffle/~/xhr2/lib/xhr2.js:64:1)
+      at XMLHttpRequest._setReadyState (/usr/lib/node_modules/truffle/build/webpack:/Users/gnidan/src/work/truffle/~/xhr2/lib/xhr2.js:354:1)
+      at XMLHttpRequest._onHttpResponseEnd (/usr/lib/node_modules/truffle/build/webpack:/Users/gnidan/src/work/truffle/~/xhr2/lib/xhr2.js:509:1)
+      at IncomingMessage.<anonymous> (/usr/lib/node_modules/truffle/build/webpack:/Users/gnidan/src/work/truffle/~/xhr2/lib/xhr2.js:469:1)
+      at endReadableNT (_stream_readable.js:1081:12)
+      at process._tickCallback (internal/process/next_tick.js:63:19)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
